@@ -1,0 +1,195 @@
+/* Haupt-Container */
+main {
+    padding: 10rem;
+    padding-top: 200px;
+    display: grid;
+    gap: 3rem;
+}
+
+/* Angebot Container */
+.offer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2.5rem;
+    align-items: start;
+}
+
+/* Container für Angebote und Bild */
+.offer-image-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: start;
+    gap: 2rem;
+    padding: 2.5rem;
+}
+
+/* Bild-Stile */
+.YingYang {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-self: start;
+    margin-left: auto;
+}
+
+/* Container für Energyblockades, Wirbelsäule, Immunsystem */
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+/* Container Stile */
+.energyblockades,
+.wirbelsäule,
+.immunsystem {
+    border: 3px solid #ddd;
+    padding: 3rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    min-height: 350px;
+}
+
+/* Überschriften */
+h1,
+h2,
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h2,
+h3 {
+    color: #2c3e50;
+}
+
+/* Absatzstile */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Dropdown-Inhalte */
+.dropdown_energyblockades,
+.dropdown_wirbelsäule,
+.dropdown_immunsystem {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+/* Toggle Button */
+.dropdown_toggle {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown_toggle:hover {
+    background-color: #34495e;
+}
+
+/* Show-Klasse für Dropdown-Inhalte */
+.show {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* "80€ pro Behandlung" Stile */
+.pricing {
+    background-color: #ecf0f1;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.pricing h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.pricing p {
+    margin-bottom: 0;
+}
+
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 1024px) {
+    main {
+        padding: 3rem;
+    }
+
+    .offer-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .offer-image-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .YingYang {
+        width: 60%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .container-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .energyblockades,
+    .wirbelsäule,
+    .immunsystem {
+        min-height: unset;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+
+    .offer-image-grid {
+        gap: 1.5rem;
+    }
+
+    .YingYang {
+        width: 80%;
+        max-width: 180px;
+    }
+
+    .container-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .energyblockades,
+    .wirbelsäule,
+    .immunsystem {
+        padding: 1.5rem;
+    }
+}

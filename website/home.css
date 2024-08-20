@@ -1,0 +1,206 @@
+/* Grid Container für Intro Section */
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Beide Spalten gleich groß width: 90vw;*/
+
+    /* Breite auf 80% des Viewports reduzieren */
+
+    /* Höhe entsprechend der reduzierten Breite */
+    /* Maximale Höhe auf 80% der Bildschirmhöhe beschränken */
+    gap: 0;
+    overflow: hidden;
+    /* Verhindert Überlauf */
+    margin: auto;
+    /* Zentriert die Sektion horizontal */
+    padding: 2rem;
+}
+
+/* Linkes Grid-Item (Text) */
+.intro-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+
+
+    overflow: hidden;
+    /* Verhindert Überlauf */
+}
+
+.intro-left h1,
+.intro-left p {
+    font-family: 'Libre Baskerville', serif;
+    color: #333;
+    text-align: center;
+}
+
+
+.intro-left h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: medium;
+    /* Entferne justify-content: center; */
+    text-align: center;
+    /* Zentriert den h2-Text horizontal */
+}
+
+.intro-left p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.intro-left em {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Rechtes Grid-Item (Bild) */
+.intro-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 700px;
+    width: 100%;
+
+}
+
+
+
+/* Testimonial Slider Styles */
+.testimonial-slider {
+    position: relative;
+    max-width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+}
+
+.active {
+    display: block;
+    opacity: 1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+}
+
+.content h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0d0d0d;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    main {
+        padding: 1rem;
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-slider {
+        height: 400px;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-slider {
+        height: 300px;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        padding: 6px 12px;
+    }
+}

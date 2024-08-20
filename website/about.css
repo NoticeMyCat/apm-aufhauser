@@ -1,0 +1,92 @@
+/* Main Content */
+main {
+    padding: 2rem;
+    padding-top: 180px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-me,
+.journey {
+    margin-bottom: 3rem;
+}
+
+.about-content,
+.journey-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img,
+.journey-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    flex: 1;
+    min-width: 280px;
+    color: #333;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #090909;
+    text-decoration: underline;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .about-content,
+    .journey-content {
+        flex-direction: column;
+    }
+
+    .profile-img,
+    .journey-img {
+        max-width: 100%;
+    }
+
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+    main {
+        padding-top: 60px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+    main {
+        padding-top: 60px;
+    }
+}

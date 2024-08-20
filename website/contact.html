@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../pictures/LOGO_aufhauser.png" type="image/png">
+    <title>apm-aufhauser</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <!-- Google Fonts für Libre Baskerville einbinden -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap">
+    <!-- FontAwesome für die Icons einbinden -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="home.html"><img src="../pictures/LOGO_aufhauser.png" alt="Logo Aufhauser" class="logo"></a>
+                <div class="brand-title">apm-aufhauser</div>
+            </div>
+            <a class="toggle-button" id="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <a class="close-button" id="navbar-close">
+                <span class="fas fa-times"></span>
+            </a>
+            <div class="navbar-links" id="navbar-links">
+                <ul>
+                    <li><a href="home.html" id="nav-home">Startseite</a></li>
+                    <li><a href="about.html" id="nav-about">Profil</a></li>
+                    <li><a href="services.html" id="nav-services">Angebote</a></li>
+                    <li><a href="contact.html" id="nav-contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contact">
+            <h2>Kontakt</h2>
+            <label for="salutation">Anrede</label>
+            <select id="salutation" name="salutation" required>
+                <option value="" disabled selected>Bitte wählen</option>
+                <option value="herr">Herr</option>
+                <option value="frau">Frau</option>
+                <option value="divers">Divers</option>
+            </select>
+            <form id="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="first-name">Vorname</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Nachname</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button id="submit-button" type="submit">Senden</button>
+            </form>
+            <h2>Anschrift</h2>
+            <p><i class="fas fa-map-marker-alt"></i> <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=Tauxgasse+24A,+5020+Salzburg"
+                    target="_blank">Tauxgasse 24A, 5020 Salzburg</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:apm.aufhauser@gmail.com">apm.aufhauser@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+436641632076">+43 664 1632076</a></p>
+        </div>
+        <div class="map">
+            <h2>Anfahrt</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.082712041094!2d13.036255015583473!3d47.81486727919847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47769a99a8b5e1ed%3A0x460d8a163c64f2c3!2sTauxgasse%2024A%2C%205020%20Salzburg%2C%20Austria!5e0!3m2!1sen!2sus!4v1614181117990!5m2!1sen!2sus"
+                width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+    <footer>
+        <section class="footer-top">
+            <div class="footer-left">
+                <a href="home.html">
+                    <img src="../pictures/APM_AUFHAUSER_Logo1.png" alt="footer-icon" class="footer-icon">
+                </a>
+            </div>
+            <div class="footer-right">
+                <p><i class="fas fa-map-marker-alt"></i> <a
+                        href="https://www.google.com/maps/dir/?api=1&destination=Tauxgasse+24A,+5020+Salzburg"
+                        target="_blank">Tauxgasse 24A, 5020 Salzburg</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:apm.aufhauser@gmail.com">apm.aufhauser@gmail.com</a>
+                </p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+436641632076">+43 664 1632076</a></p>
+            </div>
+        </section>
+        <!-- Divider Line -->
+        <hr class="footer-divider">
+        <section class="footer-bottom">
+            <p class="copyright">&copy; 2024 Alle Rechte vorbehalten</p>
+            <div class="legal"> <a href="impressum.html">Impressum</a></div>
+        </section>
+    </footer>
+    <script src="navbar_hover.js"></script>
+    <script src="navbar_toggle.js"></script>
+    <script src="contact_email.js"></script>
+</body>
+
+</html>

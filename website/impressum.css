@@ -1,0 +1,130 @@
+/* Allgemeine Stile für den Main-Bereich */
+main {
+    max-width: 1200px;
+    /* Maximale Breite für große Bildschirme */
+    margin: 0 auto;
+    /* Zentrierung des Inhalts */
+    padding: 5rem;
+    /* Allgemeines Padding für den Main-Bereich */
+    background-color: #f9f9f9;
+    /* Heller Hintergrund für bessere Lesbarkeit */
+    color: #333;
+    /* Textfarbe */
+    line-height: 1.6;
+    /* Zeilenhöhe für bessere Lesbarkeit */
+    padding-top: 180px;
+}
+
+/* Stile für Section und Überschriften */
+main section {
+    margin-bottom: 40px;
+    /* Abstand zwischen den Sektionen */
+}
+
+main h1 {
+    font-family: 'Libre Baskerville', serif;
+    /* Google Fonts Schriftart */
+    font-size: 2.5rem;
+    /* Größe des Haupttitels */
+    margin-bottom: 20px;
+    /* Abstand unter dem Haupttitel */
+    text-align: center;
+    /* Zentrierung des Haupttitels */
+}
+
+main h3 {
+    font-family: 'Libre Baskerville', serif;
+    /* Google Fonts Schriftart */
+    font-size: 1.8rem;
+    /* Größe der Unterüberschriften */
+    margin-top: 30px;
+    /* Abstand über den Unterüberschriften */
+    margin-bottom: 15px;
+    /* Abstand unter den Unterüberschriften */
+    color: #555;
+    /* Leicht abweichende Farbe für die Unterüberschriften */
+}
+
+/* Stile für Absätze und Links */
+main p {
+    font-size: 1rem;
+    /* Textgröße der Absätze */
+    margin-bottom: 20px;
+    /* Abstand unter den Absätzen */
+    text-align: justify;
+    /* Text wird auf beiden Seiten ausgerichtet */
+}
+
+main p a {
+    color: #0066cc;
+    /* Farbe der Links */
+    text-decoration: none;
+    /* Entfernt die Unterstreichung der Links */
+}
+
+main p a:hover {
+    text-decoration: underline;
+    /* Unterstreicht Links bei Hover */
+}
+
+/* Medienabfragen für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+    main {
+        padding: 3rem;
+        /* Weniger Padding für kleinere Bildschirme */
+        padding-top: 100px;
+    }
+
+    main h1 {
+        font-size: 2rem;
+        /* Kleinere Schriftgröße für den Haupttitel */
+    }
+
+    main h3 {
+        font-size: 1.5rem;
+        /* Kleinere Schriftgröße für die Unterüberschriften */
+    }
+
+    main p {
+        font-size: 0.9rem;
+        /* Kleinere Schriftgröße für die Absätze */
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+        /* Noch weniger Padding für sehr kleine Bildschirme */
+        padding-top: 100px;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+        /* Noch kleinere Schriftgröße für den Haupttitel */
+    }
+
+    main h3 {
+        font-size: 1.3rem;
+        /* Noch kleinere Schriftgröße für die Unterüberschriften */
+    }
+
+    main p {
+        font-size: 0.85rem;
+        /* Noch kleinere Schriftgröße für die Absätze */
+    }
+}
+
+/* Querformat */
+@media (orientation: landscape) and (max-width: 1024px) {
+    main {
+        gap: 2rem;
+        padding-top: 30px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+    main {
+        gap: 1rem;
+        padding-top: 20px;
+    }
+}
