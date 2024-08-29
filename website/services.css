@@ -3,7 +3,7 @@ main {
     padding: 10rem;
     padding-top: 200px;
     display: grid;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 /* Angebot Container */
@@ -11,8 +11,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding: 2.5rem;
     align-items: start;
+    text-align: justify;
+
 }
 
 /* Container für Angebote und Bild */
@@ -22,16 +23,6 @@ main {
     align-items: start;
     gap: 2rem;
     padding: 2.5rem;
-}
-
-/* Bild-Stile */
-.YingYang {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    align-self: start;
-    margin-left: auto;
 }
 
 /* Container für Energyblockades, Wirbelsäule, Immunsystem */
@@ -53,6 +44,7 @@ main {
     position: relative;
     overflow: hidden;
     min-height: 350px;
+    text-align: justify;
 }
 
 /* Überschriften */
@@ -75,7 +67,7 @@ h3 {
 /* Absatzstile */
 p {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.8;
 }
 
@@ -192,4 +184,26 @@ p {
     .immunsystem {
         padding: 1.5rem;
     }
+}
+
+.apmTafel {
+    width: 100%;
+    /* Bild soll die gesamte Breite des Containers einnehmen */
+    height: auto;
+    /* Höhe des Containers wird automatisch angepasst, um das Seitenverhältnis des Bildes zu erhalten */
+    box-sizing: border-box;
+    /* Padding und Border werden zur Gesamtgröße des Containers gezählt */
+    overflow: hidden;
+    /* Verhindert, dass überstehende Teile des Bildes sichtbar sind */
+}
+
+.apmTafel img {
+    display: block;
+    /* Entfernt den zusätzlichen Abstand unter dem Bild */
+    width: 100%;
+    /* Bild nimmt die gesamte Breite des Containers ein */
+    height: auto;
+    /* Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
+    object-fit: contain;
+    /* Das Bild wird so skaliert, dass es vollständig im Container angezeigt wird */
 }

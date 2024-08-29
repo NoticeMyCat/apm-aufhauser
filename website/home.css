@@ -1,7 +1,7 @@
 /* Grid Container für Intro Section */
 .intro-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     /* Beide Spalten gleich groß width: 90vw;*/
 
     /* Breite auf 80% des Viewports reduzieren */
@@ -13,7 +13,6 @@
     /* Verhindert Überlauf */
     margin: auto;
     /* Zentriert die Sektion horizontal */
-    padding: 2rem;
 }
 
 /* Linkes Grid-Item (Text) */
@@ -47,7 +46,7 @@
 }
 
 .intro-left p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -56,16 +55,31 @@
     color: #666;
 }
 
-/* Rechtes Grid-Item (Bild) */
 .intro-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    height: 700px;
-    width: 100%;
-
+    /* Zentriert das Grid-Item sowohl horizontal als auch vertikal */
 }
+
+.YingYang {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Zentriert das Bild im Container */
+}
+
+.YingYang img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 
 
 
@@ -164,12 +178,19 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
     main {
-        padding: 1rem;
-        padding-top: 100px;
+        padding-top: 80px;
+    }
+
+    .intro-section {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 768px) {
+    .intro-section {
+        grid-template-columns: 1fr;
+    }
+
     .testimonial-slider {
         height: 400px;
     }
