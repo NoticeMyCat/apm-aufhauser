@@ -192,13 +192,13 @@ header {
         height: 3px;
         background-color: #ccc;
         position: absolute;
-        bottom: -4rem;
+        bottom: -2rem;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .navbar-links li:not(:first-child) {
-        margin-top: 6rem;
+        margin-top: 2rem;
     }
 
     .toggle-button {
@@ -373,27 +373,19 @@ footer {
     }
 }
 
-/* 
+
 @media (prefers-color-scheme: dark) {
 
-    body {
-        background-color: #1e1e1e;
-        color: #f0f0f0;
+    header {
+        background-color: #fff;
     }
 
-    .header {
-        background-color: #333;
-        color: #f5f5f5;
+    .brand-title,
+    .toggle-button {
+        color: #000;
     }
 
-    .button {
-        background-color: #f0f0f0;
-        color: #333;
-    }
-
-    .intro-section {
-        background-color: #2b2b2b;
-        color: #f0f0f0;
+    .navbar-links li:not(:last-child)::after {
+        background-color: #ccc;
     }
 }
-    */

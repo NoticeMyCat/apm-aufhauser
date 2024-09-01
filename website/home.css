@@ -184,6 +184,10 @@
     .intro-section {
         grid-template-columns: 1fr 1fr;
     }
+
+    .intro-left {
+        min-height: 300px;
+    }
 }
 
 @media (max-width: 768px) {

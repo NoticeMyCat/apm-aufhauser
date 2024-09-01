@@ -32,12 +32,12 @@ h2 {
 }
 
 .contact .map h2 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Arial', sans-serif;
     margin-bottom: 1rem;
 }
 
 .contact h3 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Arial', sans-serif;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -115,53 +115,42 @@ button {
 
 }
 
+@media (max-width: 1024px) {
+    main {
+        padding-top: 80px;
+        gap: 1rem;
+    }
+
+    .contact {
+        margin-left: 1rem;
+    }
+
+    .map {
+        margin-right: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
         padding: 1rem;
-        padding-top: 80px;
+        padding-top: 2rem;
+        gap: 1rem;
     }
 
     .contact {
-        margin-top: 3rem;
         margin-bottom: 1rem;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .map {
         margin-top: 0;
-        margin-bottom: 3rem;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 2rem;
     }
 
-}
 
-/* Querformat */
-@media (orientation: landscape) and (max-width: 1024px) {
 
-    .contact {
-        margin-left: 1rem;
-    }
-
-    .map {
-        margin-right: 1rem;
-    }
-
-    main {
-        gap: 1rem;
-        padding-top: 0;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 768px) {
-
-    .contact {
-        margin-left: 1rem;
-    }
-
-    .map {
-        margin-right: 1rem;
-    }
-
-    main {
-        gap: 1rem;
-    }
 }
