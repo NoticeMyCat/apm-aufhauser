@@ -63,7 +63,9 @@ h2 {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-
+    main {
+        padding: 1rem;
+    }
 
     .toggle-button {
         display: flex;
