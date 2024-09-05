@@ -61,9 +61,17 @@ h2 {
 
 
 /* Responsive Styles */
+@media (max-width: 1024px) {
+    main {
+        padding: 1.5rem;
+        padding-top: 100px;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         padding: 1rem;
+        padding-top: 100px;
     }
 
     .toggle-button {
@@ -80,16 +88,4 @@ h2 {
         max-width: 100%;
     }
 
-}
-
-@media (orientation: landscape) and (max-width: 1024px) {
-    main {
-        padding-top: 60px;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 768px) {
-    main {
-        padding-top: 60px;
-    }
 }

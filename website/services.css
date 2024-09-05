@@ -125,10 +125,19 @@ p {
     margin-bottom: 0;
 }
 
+#energyblockades-anchor,
+#wirbelsäule-anchor,
+#immunsystem-anchor {
+    position: relative;
+    top: -180px;
+    /* Standard Verschiebung für große Bildschirme */
+}
+
 /* Media Query für kleinere Bildschirme */
 @media (max-width: 1024px) {
     main {
         padding: 3rem;
+        padding-top: 100px;
     }
 
     .offer-container {
@@ -158,11 +167,20 @@ p {
         min-height: unset;
         padding: 2rem;
     }
+
+    #energyblockades-anchor,
+    #wirbelsäule-anchor,
+    #immunsystem-anchor {
+
+        top: -150px;
+
+    }
 }
 
 @media (max-width: 768px) {
     main {
         padding: 2rem;
+        padding-top: 100px;
     }
 
     .offer-image-grid {
@@ -183,6 +201,12 @@ p {
     .wirbelsäule,
     .immunsystem {
         padding: 1.5rem;
+    }
+
+    #energyblockades-anchor,
+    #wirbelsäule-anchor,
+    #immunsystem-anchor {
+        top: -90px;
     }
 }
 
