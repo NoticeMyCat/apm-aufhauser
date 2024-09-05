@@ -120,6 +120,10 @@ header {
     display: none !important;
 }
 
+.close-button.active {
+    display: none;
+}
+
 /* Querformat 
 @media (orientation: landscape) and (max-width: 1024px) {
     header {

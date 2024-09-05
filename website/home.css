@@ -118,6 +118,7 @@
     border-radius: 10px;
     text-align: center;
     max-width: 80%;
+    opacity: 80%;
 }
 
 .content h2 {
@@ -174,6 +175,28 @@
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+.testimonial-slider .slide {
+    width: 100%;
+
+
+}
+
+.testimonial-slider .slide:nth-child(1) {
+    background-image: url('../pictures/pictures_important/DSC03652.JPG');
+}
+
+.testimonial-slider .slide:nth-child(2) {
+    background-image: url('../pictures/pictures_important/DSC03832.JPG');
+}
+
+.testimonial-slider .slide:nth-child(3) {
+    background-image: url('../pictures/pictures_important/DSC03737.JPG');
+}
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
