@@ -1,9 +1,13 @@
-@media (prefers-color-scheme: dark) {
-    .toggle-button {
-        color: #000000 !important;
-    }
+/* Dark Mode Styles */
+.dark-mode .navbar {
+    background-color: #fff;
+}
 
-    header {
-        color: #ccc !important;
-    }
+.dark-mode .toggle-button {
+    color: #000000 !important;
+}
+
+
+.dark-mode .brand-title {
+    color: #000000 !important;
 }
