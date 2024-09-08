@@ -341,12 +341,21 @@ p {
 
     #img_immun,
     #img_energy,
-    #img_wirbel,
-    #img_energy_2 {
+    #img_wirbel {
         display: flex;
     }
 
-    .offer-container {
+    #energy_right {
+        display: flex;
+        overflow: hidden;
+        margin: auto;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .energyblockades {
         grid-template-columns: 1.5fr 0.7fr;
     }
 }
