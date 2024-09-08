@@ -413,14 +413,10 @@ footer {
 
 @media (prefers-color-scheme: dark) {
     .toggle-button {
-        color: #000000;
+        color: #000000 !important;
     }
 
     header {
-        color: #ccc;
+        color: #ccc !important;
     }
-}
-
-:root {
-    color-scheme: only light;
 }

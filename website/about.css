@@ -150,7 +150,7 @@ h3 {
         display: flex;
     }
 
-    .profile-img {
+    .about-content {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
