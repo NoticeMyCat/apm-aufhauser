@@ -383,7 +383,7 @@ footer {
 }
 
 /* Querformat auf Handys */
-@media (orientation: landscape) and (max-width:768px) and (max-height: 500px) {
+@media (orientation: landscape) and (max-height: 500px) {
     .navbar-links ul {
         width: 100%;
         max-height: 100vh;
@@ -397,7 +397,7 @@ footer {
 
     /* Füge senkrechte Striche zwischen den Listenelementen hinzu */
     .navbar-links.active li:not(:last-child) {
-        border-right: 3px solid #ccc;
+        border-right: 3px solid #fff;
         /* Senkrechter Strich zwischen Elementen */
     }
 
@@ -409,10 +409,7 @@ footer {
 
 }
 
-.navbar-links.active {
-    border-right: none;
-    /* Deaktiviert die Striche, wenn das Menü offen ist */
-}
+
 
 @media (prefers-color-scheme: dark) {
     .toggle-button {

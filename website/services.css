@@ -211,7 +211,7 @@ p {
 }
 
 /* Querformat auf Handys */
-@media (orientation: landscape) and (max-height: 600px) {
+@media (orientation: landscape) and (max-height: 800px) {
 
     #img_immun_mobile,
     #img_energy_mobile,
@@ -221,7 +221,7 @@ p {
     }
 
     .right {
-        display: block;
+        display: flex;
     }
 }
 

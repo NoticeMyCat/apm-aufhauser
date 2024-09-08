@@ -147,7 +147,22 @@ h3 {
     .profile-img,
     .journey-img_mobile {
 
-        display: block;
+        display: flex;
+    }
+
+    .profile-img {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        background-color: #fff;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: justify;
+        line-height: 1.5;
+        border: 3px solid #ddd;
+        border-radius: 8px;
     }
 
     .profile-img_mobile,
