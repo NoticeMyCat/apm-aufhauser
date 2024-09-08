@@ -313,3 +313,18 @@ p {
     }
 
 }
+
+/* Querformat auf Handys */
+@media (orientation: landscape) and (max-height: 500px) {
+
+    #img_immun_mobile,
+    #img_energy_mobile,
+    #img_wirbel_mobile,
+    #img_energy_2_mobile {
+        display: none;
+    }
+
+    .right {
+        display: block;
+    }
+}
