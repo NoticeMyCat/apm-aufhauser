@@ -1,3 +1,20 @@
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: #d11d1d;
+        color: #e70b0b !important;
+    }
+
+    .navbar {
+        background-color: #d11d1d;
+        color: #e70b0b !important;
+    }
+}
+
+header[data-theme="dark"].navbar {
+    background-color: #d11d1d;
+    color: #e70b0b !important;
+}
+
 /* Dark Mode Styles */
 .dark-mode .navbar {
     background-color: #fff;
@@ -7,7 +24,17 @@
     color: #000000 !important;
 }
 
-
 .dark-mode .brand-title {
     color: #000000 !important;
+}
+
+.dark-mode .navbar-links.active li:not(:last-child) {
+    border-right: 3px solid #fff;
+    /* Senkrechter Strich zwischen Elementen */
+}
+
+.dark-mode .navbar-links li:not(:last-child)::after {
+
+    background-color: #fff;
+
 }

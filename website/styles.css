@@ -408,15 +408,3 @@ footer {
     }
 
 }
-
-
-
-@media (prefers-color-scheme: dark) {
-    .toggle-button {
-        color: #000000 !important;
-    }
-
-    header {
-        color: #ccc !important;
-    }
-}
