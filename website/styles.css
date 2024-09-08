@@ -127,6 +127,8 @@ header {
     display: none;
 }
 
+
+
 /* Querformat 
 @media (orientation: landscape) and (max-width: 1024px) {
     header {
@@ -405,6 +407,11 @@ footer {
 
     }
 
+}
+
+.navbar-links.active {
+    border-right: none;
+    /* Deaktiviert die Striche, wenn das Menü offen ist */
 }
 
 @media (prefers-color-scheme: dark) {

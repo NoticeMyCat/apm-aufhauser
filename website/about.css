@@ -7,7 +7,7 @@ main {
 }
 
 h2 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: Arial, sans-serif;
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
@@ -15,7 +15,8 @@ h2 {
 h3 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    word-spacing: 0.2em;
+    word-spacing: 0.1em;
+    text-align: left;
 }
 
 .about-me,
@@ -123,7 +124,7 @@ h3 {
     .profile-img,
     .journey-img {
         max-width: 100%;
-        display: none
+        display: none;
     }
 
     .profile-img_mobile,
@@ -137,5 +138,20 @@ h3 {
     .profile-img_mobile {
         max-height: 400px;
         max-width: 300px;
+    }
+}
+
+/* Querformat auf Handys */
+@media (orientation: landscape) and (max-height: 600px) {
+
+    .profile-img,
+    .journey-img_mobile {
+
+        display: block;
+    }
+
+    .profile-img_mobile,
+    .journey-img {
+        display: none;
     }
 }
