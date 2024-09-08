@@ -247,7 +247,7 @@ header {
     }
 
     .navbar-brand .logo {
-        height: 75px;
+        height: 80px;
         width: 80px;
     }
 }
@@ -381,7 +381,7 @@ footer {
 }
 
 /* Querformat auf Handys */
-@media (orientation: landscape) and (max-height: 768px) {
+@media (orientation: landscape) and (max-height: 500px) {
     .navbar-links ul {
         width: 100%;
         max-height: 100vh;
@@ -394,7 +394,7 @@ footer {
     }
 
     /* Füge senkrechte Striche zwischen den Listenelementen hinzu */
-    .navbar-links li:not(:last-child) {
+    .navbar-links.active li:not(:last-child) {
         border-right: 3px solid #ccc;
         /* Senkrechter Strich zwischen Elementen */
     }
@@ -408,18 +408,11 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+    .toggle-button {
+        color: #000000;
+    }
 
     header {
-        background-color: #fff;
-        color: #fff;
-    }
-
-    .brand-title,
-    .toggle-button {
-        color: #000;
-    }
-
-    .navbar-links li:not(:last-child)::after {
-        background-color: #ccc;
+        color: #ccc;
     }
 }

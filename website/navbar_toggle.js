@@ -46,3 +46,14 @@ setActiveNavLink();
 // Optional: Setze die aktive Klasse auch bei Fenstergrößenänderung oder bei öffnendem Hamburger-Menü
 window.addEventListener('resize', setActiveNavLink);
 
+// Kein DARK MODE
+function returnThemeBasedOnOS() {
+    let pref = window.matchMedia('(prefers-color-scheme: light)')
+    if (pref.matches) return 'light'
+    else {
+        pref = window.matchMedia('(prefers-color-scheme: dark)')
+        if (pref.matches) return 'light'
+        else return undefined
+    }
+}
+
