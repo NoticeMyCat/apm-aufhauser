@@ -355,7 +355,9 @@ p {
         justify-content: center;
     }
 
-    .energyblockades {
+    .energyblockades,
+    .wirbelsäule,
+    .immunsystem {
         grid-template-columns: 1.5fr 0.7fr;
     }
 }
