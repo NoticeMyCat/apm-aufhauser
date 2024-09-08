@@ -22,8 +22,8 @@ main section {
 }
 
 main h1 {
-    font-family: 'Libre Baskerville', serif;
-    /* Google Fonts Schriftart */
+    font-family: Arial, sans-serif;
+
     font-size: 2.5rem;
     /* Größe des Haupttitels */
     margin-bottom: 20px;
@@ -33,8 +33,7 @@ main h1 {
 }
 
 main h3 {
-    font-family: 'Libre Baskerville', serif;
-    /* Google Fonts Schriftart */
+    font-family: Arial, sans-serif;
     font-size: 1.8rem;
     /* Größe der Unterüberschriften */
     margin-top: 30px;
