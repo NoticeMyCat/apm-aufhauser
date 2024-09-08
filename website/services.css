@@ -227,6 +227,12 @@ p {
     .offer-container {
         grid-template-columns: 1fr
     }
+
+    .energyblockades,
+    .wirbelsäule,
+    .immunsystem {
+        grid-template-columns: 1.5fr 0.7fr;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -338,5 +344,9 @@ p {
     #img_wirbel,
     #img_energy_2 {
         display: flex;
+    }
+
+    .offer-container {
+        grid-template-columns: 1.5fr 0.7fr;
     }
 }

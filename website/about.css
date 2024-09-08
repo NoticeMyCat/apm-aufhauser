@@ -99,7 +99,7 @@ h3 {
     }
 
     .journey-img_mobile {
-        display: block;
+        display: flex;
         margin: 0 auto;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -116,14 +116,10 @@ h3 {
         display: flex;
     }
 
-    .about-content,
-    .journey-content {
-        flex-direction: column;
-    }
+
 
     .profile-img,
     .journey-img {
-        max-width: 100%;
         display: none;
     }
 
@@ -132,10 +128,11 @@ h3 {
         margin: 0 auto;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        display: block;
+        display: flex;
     }
 
-    .profile-img_mobile {
+    .profile-img_mobile,
+    .profile-img {
         max-height: 400px;
         max-width: 300px;
     }
@@ -168,5 +165,10 @@ h3 {
     .profile-img_mobile,
     .journey-img {
         display: none;
+    }
+
+    .profile-img {
+        max-height: 400px;
+        max-width: 300px;
     }
 }
