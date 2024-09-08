@@ -210,20 +210,7 @@ p {
     /* Standard Verschiebung für große Bildschirme */
 }
 
-/* Querformat auf Handys */
-@media (orientation: landscape) and (max-height: 800px) {
 
-    #img_immun_mobile,
-    #img_energy_mobile,
-    #img_wirbel_mobile,
-    #img_energy_2_mobile {
-        display: none;
-    }
-
-    .right {
-        display: flex;
-    }
-}
 
 /* Media Query für kleinere Bildschirme */
 @media (max-width: 1450px) {
@@ -279,6 +266,10 @@ p {
         top: -150px;
 
     }
+
+    #img_energy_2 {
+        margin-top: 5rem
+    }
 }
 
 @media (max-width: 768px) {
@@ -323,7 +314,22 @@ p {
     #img_energy_mobile,
     #img_wirbel_mobile,
     #img_energy_2_mobile {
-        display: block;
+        display: flex;
     }
 
+}
+
+/* Querformat auf Handys */
+@media (max-width: 768px) and (max-height: 800px) {
+
+    #img_immun_mobile,
+    #img_energy_mobile,
+    #img_wirbel_mobile,
+    #img_energy_2_mobile {
+        display: none;
+    }
+
+    .right {
+        display: flex;
+    }
 }
