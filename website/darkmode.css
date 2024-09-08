@@ -1,23 +1,23 @@
 @media (prefers-color-scheme: dark) {
     header {
-        background-color: #d11d1d;
+        background-color: #d11d1d !important;
         color: #e70b0b !important;
     }
 
     .navbar {
-        background-color: #d11d1d;
+        background-color: #d11d1d !important;
         color: #e70b0b !important;
     }
 }
 
 header[data-theme="dark"].navbar {
-    background-color: #d11d1d;
+    background-color: #d11d1d !important;
     color: #e70b0b !important;
 }
 
 /* Dark Mode Styles */
 .dark-mode .navbar {
-    background-color: #fff;
+    background-color: #fff !important;
 }
 
 .dark-mode .toggle-button {

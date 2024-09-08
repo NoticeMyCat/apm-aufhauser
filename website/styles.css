@@ -408,3 +408,15 @@ footer {
     }
 
 }
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: #d11d1d !important;
+        color: #e70b0b !important;
+    }
+
+    .navbar {
+        background-color: #d11d1d !important;
+        color: #e70b0b !important;
+    }
+}
