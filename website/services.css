@@ -4,6 +4,7 @@ main {
     padding-top: 200px;
     display: grid;
     gap: 2rem;
+    padding-bottom: 3rem;
 }
 
 /* Angebot Container */
@@ -13,7 +14,14 @@ main {
     gap: 2rem;
     align-items: start;
     text-align: justify;
-
+    border: 3px solid #ddd;
+    padding: 3rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: justify;
 }
 
 /* Container für Angebote und Bild */
@@ -49,26 +57,29 @@ main {
 
 /* Überschriften */
 h1,
-h2,
-h3 {
+h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
-h2,
-h3 {
-    color: #2c3e50;
-}
 
 /* Absatzstile */
 p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     line-height: 1.8;
+}
+
+.journey-img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Dropdown-Inhalte */
@@ -107,13 +118,16 @@ p {
 
 /* "80€ pro Behandlung" Stile */
 .pricing {
-    background-color: #ecf0f1;
+
     padding: 2rem;
-    border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 1.2rem;
     line-height: 1.8;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pricing h2 {
@@ -122,7 +136,11 @@ p {
 }
 
 .pricing p {
+    margin: 0 auto;
+    /* Zentriert den Container */
     margin-bottom: 0;
+    hyphens: none;
+    max-width: 700px;
 }
 
 #energyblockades-anchor,
@@ -134,6 +152,16 @@ p {
 }
 
 /* Media Query für kleinere Bildschirme */
+@media (max-width: 1324px) {
+    .journey-img {
+        display: flex;
+        /* Flexbox aktivieren */
+        justify-content: center;
+        /* Zentriert das Bild horizontal */
+        align-items: center;
+    }
+}
+
 @media (max-width: 1024px) {
     main {
         padding: 3rem;

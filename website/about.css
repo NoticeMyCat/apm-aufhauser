@@ -12,6 +12,12 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    word-spacing: 0.2em;
+}
+
 .about-me,
 .journey {
     margin-bottom: 3rem;
@@ -26,10 +32,11 @@ h2 {
     gap: 2rem;
     background-color: #fff;
     padding: 2rem;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: justify;
     line-height: 1.5;
+    border: 3px solid #ddd;
+    border-radius: 8px;
 }
 
 .profile-img,
@@ -38,6 +45,7 @@ h2 {
     max-width: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 700px;
 }
 
 .text-content {

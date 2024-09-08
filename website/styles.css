@@ -12,15 +12,18 @@ body {
 }
 
 p {
-    word-wrap: break-word;
-    /* Lässt lange Wörter umbrechen, um den Container nicht zu sprengen */
     overflow-wrap: break-word;
-    /* Sicherstellt, dass der Text umbricht, wenn er über die Containerbreite hinausgeht */
-    word-break: break-word;
-    /* Bricht Wörter in der Mitte, wenn sie zu lang sind */
+    /* Ermöglicht Wortumbruch, verhindert aber unnötige Trennungen mitten im Wort */
+    word-break: normal;
+    /* Nur Umbruch an Leerzeichen, nicht mitten im Wort */
     white-space: normal;
-    /* Stellt sicher, dass der Text umgebrochen wird */
+    /* Erlaubt normalen Umbruch */
+    word-spacing: 0.1em;
+    /* Setzt minimalen Abstand zwischen Wörtern */
+    hyphens: auto;
+    /* Fügt bei Bedarf Trennstriche hinzu, wenn Wörter umgebrochen werden müssen */
 }
+
 
 /* Header Styles */
 header {
@@ -81,7 +84,7 @@ header {
 
 .navbar-links a {
     text-decoration: none;
-    color: #B3B3B3;
+    color: #000;
     font-weight: bold;
 }
 
@@ -377,6 +380,32 @@ footer {
     }
 }
 
+/* Querformat auf Handys */
+@media (orientation: landscape) and (max-height: 768px) {
+    .navbar-links ul {
+        width: 100%;
+        max-height: 100vh;
+        flex-direction: row;
+
+    }
+
+    .navbar-links li:not(:last-child)::after {
+        display: none;
+    }
+
+    /* Füge senkrechte Striche zwischen den Listenelementen hinzu */
+    .navbar-links li:not(:last-child) {
+        border-right: 3px solid #ccc;
+        /* Senkrechter Strich zwischen Elementen */
+    }
+
+    .navbar-links li {
+        margin-top: auto;
+        justify-content: center;
+
+    }
+
+}
 
 @media (prefers-color-scheme: dark) {
 
