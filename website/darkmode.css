@@ -1,40 +1,27 @@
 @media (prefers-color-scheme: dark) {
     header {
-        background-color: #d11d1d !important;
-        color: #e70b0b !important;
+        background-color: #fff !important;
+        color: #000000 !important;
     }
 
     .navbar {
-        background-color: #d11d1d !important;
-        color: #e70b0b !important;
+        background-color: #fff !important;
+        color: #000000 !important;
     }
-}
 
-header[data-theme="dark"].navbar {
-    background-color: #d11d1d !important;
-    color: #e70b0b !important;
-}
+    .toggle-button,
+    .brand-title {
+        color: #000000 !important;
+    }
 
-/* Dark Mode Styles */
-.dark-mode .navbar {
-    background-color: #fff !important;
-}
+    .navbar-links.active li:not(:last-child) {
+        border-right: 3px solid #fff;
+        /* Senkrechter Strich zwischen Elementen */
+    }
 
-.dark-mode .toggle-button {
-    color: #000000 !important;
-}
+    .navbar-links li:not(:last-child)::after {
 
-.dark-mode .brand-title {
-    color: #000000 !important;
-}
+        background-color: #fff;
 
-.dark-mode .navbar-links.active li:not(:last-child) {
-    border-right: 3px solid #fff;
-    /* Senkrechter Strich zwischen Elementen */
-}
-
-.dark-mode .navbar-links li:not(:last-child)::after {
-
-    background-color: #fff;
-
+    }
 }

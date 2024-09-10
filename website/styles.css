@@ -161,6 +161,7 @@ header {
     .navbar {
         padding: 1rem 3rem;
         height: 80px;
+
     }
 
     .navbar-links {
@@ -407,16 +408,4 @@ footer {
 
     }
 
-}
-
-@media (prefers-color-scheme: dark) {
-    header {
-        background-color: #d11d1d !important;
-        color: #e70b0b !important;
-    }
-
-    .navbar {
-        background-color: #d11d1d !important;
-        color: #e70b0b !important;
-    }
 }
