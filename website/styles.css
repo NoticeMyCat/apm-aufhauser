@@ -127,7 +127,9 @@ header {
     display: none;
 }
 
-
+.navbar-links.active li:not(:last-child) {
+    border-right: none;
+}
 
 /* Querformat 
 @media (orientation: landscape) and (max-width: 1024px) {
