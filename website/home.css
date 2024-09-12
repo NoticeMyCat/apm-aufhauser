@@ -224,7 +224,8 @@
     }
 
     .intro-left {
-        min-height: 300px;
+        min-height: 230px;
+
     }
 
     #slider_energy {
@@ -243,6 +244,11 @@
 @media (max-width: 768px) {
     .intro-section {
         grid-template-columns: 1fr;
+    }
+
+    .intro-left {
+        padding: 1.5rem;
+        padding-bottom: 0;
     }
 
     .testimonial-slider {
