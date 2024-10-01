@@ -14,8 +14,6 @@ p {
     /* Nur Umbruch an Leerzeichen, nicht mitten im Wort */
     white-space: normal;
     /* Erlaubt normalen Umbruch */
-    word-spacing: 0.1em;
-    /* Setzt minimalen Abstand zwischen Wörtern */
     hyphens: auto;
     /* Fügt bei Bedarf Trennstriche hinzu, wenn Wörter umgebrochen werden müssen */
     margin: 0;
