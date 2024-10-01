@@ -207,10 +207,13 @@ p {
 }
 
 .pricing h2 {
-    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
+
 
 .pricing p {
     margin: 0 auto;
@@ -218,7 +221,7 @@ p {
     margin-bottom: 0;
     hyphens: none;
     max-width: 800px;
-    text-align: center;
+    text-align: left;
 }
 
 #energyblockades-anchor,
