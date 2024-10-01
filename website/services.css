@@ -7,6 +7,24 @@ main {
     padding-bottom: 3rem;
 }
 
+p {
+    overflow-wrap: break-word;
+    /* Ermöglicht Wortumbruch, verhindert aber unnötige Trennungen mitten im Wort */
+    word-break: normal;
+    /* Nur Umbruch an Leerzeichen, nicht mitten im Wort */
+    white-space: normal;
+    /* Erlaubt normalen Umbruch */
+    word-spacing: 0.1em;
+    /* Setzt minimalen Abstand zwischen Wörtern */
+    hyphens: auto;
+    /* Fügt bei Bedarf Trennstriche hinzu, wenn Wörter umgebrochen werden müssen */
+    margin: 0;
+    /* Entfernt unnötige Abstände */
+    padding: 0;
+    /* Entfernt Innenabstände */
+}
+
+
 /* Angebot Container */
 .offer-container {
     display: grid;
@@ -178,11 +196,10 @@ p {
 /* "80€ pro Behandlung" Stile */
 .pricing {
 
-    padding: 2rem;
-    text-align: center;
+    padding: 1rem;
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 1.2rem;
-    line-height: 1.8;
     border: 3px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -190,6 +207,7 @@ p {
 }
 
 .pricing h2 {
+    text-align: center;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -200,6 +218,7 @@ p {
     margin-bottom: 0;
     hyphens: none;
     max-width: 700px;
+
 }
 
 #energyblockades-anchor,
@@ -239,6 +258,10 @@ p {
     main {
         padding: 3rem;
         padding-top: 100px;
+    }
+
+    .pricing p {
+        text-align: center;
     }
 
     .offer-container {

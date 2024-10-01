@@ -154,7 +154,7 @@ header {
 */
 @media (max-width: 1124px) {
     .navbar {
-        padding: 1rem 2.5rem;
+        padding: 1rem 2rem;
     }
 }
 
