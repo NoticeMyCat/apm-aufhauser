@@ -217,8 +217,8 @@ p {
     /* Zentriert den Container */
     margin-bottom: 0;
     hyphens: none;
-    max-width: 700px;
-
+    max-width: 800px;
+    text-align: center;
 }
 
 #energyblockades-anchor,
@@ -344,6 +344,10 @@ p {
     #img_wirbel_mobile,
     #img_energy_2_mobile {
         display: flex;
+    }
+
+    .pricing p {
+        text-align: left;
     }
 
 }
