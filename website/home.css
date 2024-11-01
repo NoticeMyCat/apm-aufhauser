@@ -81,11 +81,38 @@
     object-fit: contain;
 }
 
+.Rene_HomePicture {
+    display: flex;
+    justify-content: center;
+    /* Zentriert das Bild horizontal */
+    align-items: center;
+    /* Zentriert das Bild vertikal */
+    background-color: rgba(245, 245, 245, 255)
+}
+
+.Rene {
+    justify-content: center;
+    /* nimmt die gesamte Bildschirmbreite ein */
+    max-width: 100%;
+    /* verhindert, dass das Bild breiter als der Viewport wird */
+    max-height: auto;
+    /* behält das Seitenverhältnis bei */
+    background-position: center 10%;
+    /* positioniert das Bild relativ zum Container */
+    background-size: cover;
+    /* sorgt dafür, dass das Bild den Container komplett ausfüllt */
+    overflow: hidden;
+    /* versteckt den überstehenden Teil des Bildes */
+    position: relative;
+    /* ermöglicht die korrekte Positionierung */
+    z-index: 0;
+    /* sorgt dafür, dass es andere Inhalte nicht überdeckt */
+    display: flex;
+}
 
 .Rene_Home {
     height: auto;
     max-width: 100%;
-    background-position: center 10%;
     overflow: hidden;
     /* versteckt den Teil des Bildes, der über die Containergröße hinausgeht */
     position: relative;
@@ -283,6 +310,10 @@
 
     .Rene_Home {
         display: flex;
+    }
+
+    .Rene {
+        display: none;
     }
 
     #slider_energy {
