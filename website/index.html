@@ -7,7 +7,7 @@
     <link rel="icon" href="../LOGO_aufhauser.png" type="image/png">
     <title>apm-aufhauser</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="home.css">
     <!-- FontAwesome für die Icons einbinden -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -38,45 +38,57 @@
             </div>
         </nav>
     </header>
+
     <main>
-        <div class="contact">
-            <h2>Kontakt</h2>
-            <label for="salutation">Anrede</label>
-            <select id="salutation" name="salutation" required>
-                <option value="" disabled selected>Bitte wählen</option>
-                <option value="herr">Herr</option>
-                <option value="frau">Frau</option>
-                <option value="divers">Divers</option>
-            </select>
-            <form id="contact-form" action="#" method="POST">
-                <div class="form-group">
-                    <label for="first-name">Vorname</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Nachname</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Nachricht</label>
-                    <textarea id="message" name="message" rows="8" required></textarea>
-                </div>
-                <button id="submit-button" type="submit">Senden</button>
-            </form>
-            <h2>Anschrift</h2>
-            <p><i class="fas fa-map-marker-alt"></i> <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=Tauxgasse+24A,+5020+Salzburg"
-                    target="_blank">Tauxgasse 24A, 5020 Salzburg</a></p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:apm.aufhauser@gmail.com">apm.aufhauser@gmail.com</a></p>
-            <p><i class="fas fa-phone"></i> <a href="tel:+436641632076">+43 664 1632076</a></p>
+        <!-- Home Section -->
+        <section class="intro-section">
+            <div class="intro-left">
+                <h1>Akupunkt-Massage (APM)</h1>
+                <h2>nach Penzel</h2>
+                <p>Eine sanfte, ganzheitliche Schmerz- und Regulationstherapie, die den Energiefluss im Körper reguliert
+                    und Beschwerden lindert.</p>
+                <p><em>"Akupunktur ohne Nadeln"</em></p>
+            </div>
+            <div class="intro-right">
+                <img src="../APM_AUFHAUSER_YingYang.png" alt="Ying Yang" class="YingYang">
+            </div>
+
+
+            <img src="../Rene_Home.JPG" alt="Rene_Home" class="Rene_Home">
+        </section>
+        <div class="Rene_HomePicture">
+            <img src="../Home.jpeg" alt="Rene" class="Rene">
         </div>
-        <div class="map">
-            <h2>Anfahrt</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.082712041094!2d13.036255015583473!3d47.81486727919847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47769a99a8b5e1ed%3A0x460d8a163c64f2c3!2sTauxgasse%2024A%2C%205020%20Salzburg%2C%20Austria!5e0!3m2!1sen!2sus!4v1614181117990!5m2!1sen!2sus"
-                width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+
+        <!-- Testimonial Slider -->
+        <!-- style="background-image: url('C:/Users/43677/Desktop/APM_Aufhauser/pictures/pictures_important/DSC03652.JPG');"
+         style="background-image: url('C:/Users/43677/Desktop/APM_Aufhauser/pictures/pictures_important/DSC03832.JPG');"
+         style="background-image: url('C:/Users/43677/Desktop/APM_Aufhauser/pictures/pictures_important/DSC03737.JPG');" -->
+        <section class="testimonial-slider">
+            <div class="slide active" id="slider_energy">
+                <div class="content">
+                    <h2>Energie-Blockaden</h2>
+                    <a href="services.html#energyblockades-anchor" class="button">Mehr erfahren</a>
+                </div>
+            </div>
+            <div class="slide" id="slider_immun">
+                <div class="content">
+                    <h2>Immunsystem</h2>
+                    <a href="services.html#immunsystem-anchor" class="button">Mehr erfahren</a>
+                </div>
+            </div>
+            <div class="slide" id="slider_wirbel">
+                <div class="content">
+                    <h2>Wirbelsäule</h2>
+                    <a href="services.html#wirbelsäule-anchor" class="button">Mehr erfahren</a>
+                </div>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </section>
+
     </main>
+
     <footer>
         <section class="footer-top">
             <div class="footer-left">
@@ -102,7 +114,7 @@
     </footer>
     <script src="navbar_hover.js"></script>
     <script src="navbar_toggle.js"></script>
-    <script src="contact_email.js"></script>
+    <script src="tesitmonial_slider.js"></script>
 
 </body>
 
